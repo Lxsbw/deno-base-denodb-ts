@@ -4,6 +4,7 @@ import { DataTypes, Database, Model } from 'https://deno.land/x/denodb/mod.ts';
 class MobilePhoneModel extends Model {
   //表名
   static table = 'mobile_phone';
+  static timestamps = true;
   //字段
   static fields = {
     id: { primaryKey: true, autoIncrement: true },

@@ -6,11 +6,11 @@ class mobilePhoneService {
   }
 
   static async findAll(param: any) {
-    return await MobilePhoneModel.all(); //.where(param).get();
+    return await MobilePhoneModel.where(param).get();
   }
 
   static async findById(id: string) {
-    return await MobilePhoneModel.where('id', id).get();
+    return await MobilePhoneModel.find(id);
   }
 
   static async update(id: string, param: any) {
