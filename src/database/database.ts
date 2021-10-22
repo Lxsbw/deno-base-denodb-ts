@@ -1,4 +1,4 @@
-import { Database } from 'https://deno.land/x/denodb/mod.ts';
+import { Database } from '../deps.ts';
 
 //MySQL连接
 const mysqldb = new Database('mysql', {

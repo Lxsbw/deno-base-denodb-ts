@@ -1,4 +1,4 @@
-import { DataTypes, Database, Model } from 'https://deno.land/x/denodb/mod.ts';
+import { DataTypes, Model } from '../deps.ts';
 
 //员工实体
 class MobilePhoneModel extends Model {
