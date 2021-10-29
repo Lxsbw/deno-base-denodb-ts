@@ -3,8 +3,10 @@ scripts:
   start: deno run --allow-net --allow-env ./src/index.ts
   dev: denon run --allow-net --allow-env ./src/index.ts
   test: deno test --allow-net server_test.ts
-  prd: pm2 start 'deno run --allow-net ./src/index.ts' --name=deno-base
-  stop: pm2 stop deno-base && pm2 delete deno-base
+  prd: pm2 start ./src/index.ts --interpreter="deno" --interpreter-args="run --allow-net --allow-env" --name=deno-base-denodb-ts
+  prd_old: pm2 start 'deno run --allow-net --allow-env ./src/index.ts' --name=deno-base-denodb-ts
+  stop: pm2 stop deno-base-denodb-ts && pm2 delete deno-base-denodb-ts
+
 # 普通方式
 # deno run --allow-net ./src/index.ts
 
