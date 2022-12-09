@@ -26,9 +26,17 @@ class App extends Dero {
   }
 }
 
+console.log('====================================');
+console.log('🚀  Your awesome APP is launching...');
+console.log('====================================');
+
 //初始化数据库
 await dbManage.init();
 
 await new App().listen(8000, () => {
-  console.log('Running on port 8000');
+  console.log('====================================');
+  console.log(`✅  http://127.0.0.1:8000`);
+  console.log(`✅  http://127.0.0.1:8000/api-docs/swagger`);
+  console.log(`✅  Your awesome APP launched development`);
+  console.log('====================================');
 });

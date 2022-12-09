@@ -1,0 +1,24 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "dev": {
+      "cmd": "deno run ./src/index.ts",
+      "allow": ["net", "env"]
+    },
+    "start": {
+      "cmd": "deno run ./src/index.ts",
+      "allow": ["net", "env"],
+      "watch": false
+    },
+    "prd": {
+      "cmd": "bash ./src/shell/app.sh deno-base-denodb-ts start ./src/index.ts",
+      "desc": "PM2 start",
+      "watch": false
+    },
+    "stop": {
+      "cmd": "bash ./src/shell/app.sh deno-base-denodb-ts stop",
+      "desc": "PM2 stop & delete",
+      "watch": false
+    }
+  }
+}
