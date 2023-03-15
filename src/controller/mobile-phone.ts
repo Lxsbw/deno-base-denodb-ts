@@ -1,5 +1,5 @@
-import { BaseController, Controller, Get, Post, Put, Delete, Patch } from '../deps.ts';
-import { ApiDocument, ApiOperation, ApiResponse, ApiParameter, ApiRequestBody } from '../deps.ts';
+import { BaseController, Controller, Get, Post, Put, Delete, Patch } from 'dero';
+import { ApiDocument, ApiOperation, ApiResponse, ApiParameter, ApiRequestBody } from 'dero_swagger';
 import mobilePhoneService from '../service/mobile-phone.ts';
 import { MobilePhoneSaveIn, MobilePhoneModifyIn, MobilePhoneModifyInPatch } from '../schema/request/mobile-phone.ts';
 

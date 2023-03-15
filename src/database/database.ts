@@ -1,4 +1,4 @@
-import { Database } from '../deps.ts';
+import { Database } from 'denodb';
 
 //MySQL连接
 const mysqldb = new Database('mysql', {
