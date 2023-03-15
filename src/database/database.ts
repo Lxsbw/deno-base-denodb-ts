@@ -2,7 +2,7 @@ import { Database } from '../deps.ts';
 
 //MySQL连接
 const mysqldb = new Database('mysql', {
-  host: '121.37.188.31',
+  host: '10.211.55.58',
   port: 6606,
   database: 'egg_test',
   username: 'root',
